@@ -1,7 +1,12 @@
-import { ELEMENT_DEFAULT, setNodes, unwrapNodes } from '@udecode/plate-common';
+import { setNodes, unwrapNodes } from '@udecode/plate-common';
 import { getPlatePluginType, SPEditor } from '@udecode/plate-core';
 import { Path } from 'slate';
-import { ELEMENT_LI, ELEMENT_OL, ELEMENT_UL } from '../defaults';
+import {
+  ELEMENT_DEFAULT,
+  ELEMENT_LI,
+  ELEMENT_OL,
+  ELEMENT_UL,
+} from '../defaults';
 
 export const unwrapList = (editor: SPEditor, { at }: { at?: Path } = {}) => {
   setNodes(

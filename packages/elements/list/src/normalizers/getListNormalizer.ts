@@ -1,9 +1,4 @@
-import {
-  ELEMENT_DEFAULT,
-  getParent,
-  match,
-  setNodes,
-} from '@udecode/plate-common';
+import { getParent, match, setNodes } from '@udecode/plate-common';
 import {
   getPlatePluginType,
   isElement,
@@ -11,7 +6,7 @@ import {
   TDescendant,
 } from '@udecode/plate-core';
 import { NodeEntry, Transforms } from 'slate';
-import { ELEMENT_LI, ELEMENT_LIC } from '../defaults';
+import { ELEMENT_DEFAULT, ELEMENT_LI, ELEMENT_LIC } from '../defaults';
 import { getListTypes } from '../queries/getListTypes';
 import { ListNormalizerOptions } from '../types';
 import { normalizeListItem } from './normalizeListItem';

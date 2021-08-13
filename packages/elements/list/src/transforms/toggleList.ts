@@ -1,13 +1,7 @@
-import {
-  ELEMENT_DEFAULT,
-  getNodes,
-  setNodes,
-  someNode,
-  wrapNodes,
-} from '@udecode/plate-common';
+import { getNodes, setNodes, someNode, wrapNodes } from '@udecode/plate-common';
 import { getPlatePluginType, SPEditor, TElement } from '@udecode/plate-core';
 import { Editor } from 'slate';
-import { ELEMENT_LI, ELEMENT_LIC } from '../defaults';
+import { ELEMENT_DEFAULT, ELEMENT_LI, ELEMENT_LIC } from '../defaults';
 import { unwrapList } from './unwrapList';
 
 export const toggleList = (editor: SPEditor, { type }: { type: string }) => {

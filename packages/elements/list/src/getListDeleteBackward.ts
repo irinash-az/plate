@@ -1,6 +1,5 @@
 import {
   deleteFragment,
-  ELEMENT_DEFAULT,
   isFirstChild,
   isSelectionAtBlockStart,
 } from '@udecode/plate-common';
@@ -15,7 +14,7 @@ import { isListNested } from './queries/isListNested';
 import { removeFirstListItem } from './transforms/removeFirstListItem';
 import { removeListItem } from './transforms/removeListItem';
 import { unwrapList } from './transforms/unwrapList';
-import { ELEMENT_LI } from './defaults';
+import { ELEMENT_LI, ELEMENT_DEFAULT } from './defaults';
 
 export const getListDeleteBackward = (
   editor: SPEditor,

@@ -1,4 +1,4 @@
-import { ELEMENT_DEFAULT, isBlockAboveEmpty } from '@udecode/plate-common';
+import { isBlockAboveEmpty } from '@udecode/plate-common';
 import { getPlatePluginType, SPEditor } from '@udecode/plate-core';
 import {
   getResetNodeOnKeyDown,
@@ -8,7 +8,7 @@ import { getListItemEntry } from './queries/getListItemEntry';
 import { insertListItem } from './transforms/insertListItem';
 import { moveListItemUp } from './transforms/moveListItemUp';
 import { unwrapList } from './transforms/unwrapList';
-import { ELEMENT_LI } from './defaults';
+import { ELEMENT_LI, ELEMENT_DEFAULT } from './defaults';
 
 export const getListInsertBreak = (editor: SPEditor) => {
   if (!editor.selection) return;
